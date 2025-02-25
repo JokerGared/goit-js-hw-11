@@ -30,6 +30,7 @@ refs.form.addEventListener('submit', e => {
         position: 'topRight',
         message: `Sorry, there are no images matching your search query. Please try again!`,
       });
+      refs.spinner.classList.remove('is-pending');
     });
   e.target.reset();
 });
